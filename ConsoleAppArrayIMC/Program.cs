@@ -66,7 +66,7 @@ namespace ConsoleAppArrayIMC
                     cont++;
                 }
             }
-            Console.WriteLine("" + cont + " pessoas estão acima do peso ideal");
+            Console.WriteLine("" + cont*20 + "% pessoas estão acima do peso ideal");
             Console.ReadKey();
         }
     }
