@@ -28,7 +28,7 @@ namespace ConsoleAppArrayIMC
 
                 imc[i] = peso[i] / alt[i] * alt[i];
             }
-            for (int j = 0;j<= 4;j++)
+            for (int j = 0; j <= 4; j++)
             {
                 Console.WriteLine("Nome: " + nome[j]);
                 Console.WriteLine("Peso: " + peso[j]);
@@ -66,8 +66,7 @@ namespace ConsoleAppArrayIMC
                     cont++;
                 }
             }
-            double result = cont / 5 - cont;
-            Console.WriteLine("" + result + "% das pessoas estão acima do peso ideal");
+            Console.WriteLine("" + cont + "pessoas estão acima do peso ideal");
             Console.ReadKey();
         }
     }
