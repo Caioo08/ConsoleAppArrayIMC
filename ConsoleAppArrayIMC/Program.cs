@@ -16,7 +16,7 @@ namespace ConsoleAppArrayIMC
             double[] imc = new double[5];
             int cont = 0;
 
-            for (int i = 0;i<= 1;i++)
+            for (int i = 0;i<= 4;i++)
             {
                 Console.WriteLine("Digite o nome: ");
                 nome[i] = Console.ReadLine();
@@ -28,7 +28,7 @@ namespace ConsoleAppArrayIMC
 
                 imc[i] = peso[i] / (alt[i] * alt[i]);
             }
-            for (int j = 0; j <= 1; j++)
+            for (int j = 0; j <= 4; j++)
             {
                 Console.WriteLine("Nome: " + nome[j]);
                 Console.WriteLine("Peso: " + peso[j]);
