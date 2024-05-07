@@ -16,7 +16,7 @@ namespace ConsoleAppArrayIMC
             double[] imc = new double[5];
             int cont = 0;
 
-            for (int i = 0;i<= 4;i++)
+            for (int i = 0;i<= 1;i++)
             {
                 Console.WriteLine("Digite o nome: ");
                 nome[i] = Console.ReadLine();
@@ -26,9 +26,9 @@ namespace ConsoleAppArrayIMC
                 peso[i] = double.Parse(Console.ReadLine());
                 Console.Clear();
 
-                imc[i] = peso[i] / alt[i] * alt[i];
+                imc[i] = peso[i] / (alt[i] * alt[i]);
             }
-            for (int j = 0; j <= 4; j++)
+            for (int j = 0; j <= 1; j++)
             {
                 Console.WriteLine("Nome: " + nome[j]);
                 Console.WriteLine("Peso: " + peso[j]);
@@ -66,7 +66,7 @@ namespace ConsoleAppArrayIMC
                     cont++;
                 }
             }
-            Console.WriteLine("" + cont + "pessoas estão acima do peso ideal");
+            Console.WriteLine("" + cont + " pessoas estão acima do peso ideal");
             Console.ReadKey();
         }
     }
